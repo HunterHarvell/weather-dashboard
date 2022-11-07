@@ -30,10 +30,38 @@
                 <button class="btn btn-info mb-3" type="button" id="clear-history">Clear history</button>
                 <form id="history"></form>
             </aside>
+            <!-- today's weather section -->
+            <section class="col-lg-9">
+                <!-- current weather -->
+                <div class="row mr-0">
+                    <div class="col-lg-11 card m-3 d-none" id="today-weather">
+                        <div class="card-body">
+                            <h3 id="city-name" class="city-name align-middle"></h3>
+                            <img id="current-pic" alt="">
+                            <p id="temperature"></p>
+                            <p id="humidity"></p>
+                            <p id="wind-speed"></p>
+                            <p id="UV-index"></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- five day forcast -->
+                <header class="row d-none" id="fiveday-header">
+                    <div class="col-12">
+                        <h3>5-Day Forecast</h3>
+                    </div>
+                </header>
+                <section class="row">
+                    <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
+                    <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
+                    <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
+                    <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
+                    <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
+                </section>
+            </section>
         </section>
-
-
     </section>
-    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./assets/script.js"></script>
 </body>
 </html>
